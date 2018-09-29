@@ -9,13 +9,11 @@
 
     <div class="container">
       <div class="wrapper">
-        { content }}
-        {{ .Site.Title }}
+        {{ block "main" . }} {{ end }}
       </div>
     </div>
 
-    {{ partial "footer.html" . }}
-    
+    {{ partial "footer.html" . }}    
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="{{ .Site.BaseURL }}/js/bootstrap.min.js"></script>
