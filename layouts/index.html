@@ -19,7 +19,9 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="{{ .Site.BaseURL }}/js/bootstrap.min.js"></script>
- { if site.analytics %}{% include analytics.html %}{% endif %}
+  {{ with .Site.Params.analytics }} 
+    {{ partial "analytics.html" . }}
+  {{ end }}
   </body>
 
 </html>
