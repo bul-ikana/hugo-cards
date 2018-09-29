@@ -5,11 +5,12 @@
 
   <body>
 
-    { partial "header.html" }}
+    {{ partial "header.html" . }}
 
     <div class="container">
       <div class="wrapper">
         { content }}
+        {{ .Site.Title }}
       </div>
     </div>
 
@@ -17,7 +18,7 @@
     
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="{site.baseurl}}/js/bootstrap.min.js"></script>
+  <script src="{{ .Site.BaseURL }}/js/bootstrap.min.js"></script>
  { if site.analytics %}{% include analytics.html %}{% endif %}
   </body>
 
