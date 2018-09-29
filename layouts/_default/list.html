@@ -14,7 +14,7 @@
                   {{ if .Params.img }}
                   <img width="100%" src="{{ .Site.BaseURL }}images/{{ .Params.img }}" alt="{{ .Title }}">
                   {{ else }}
-                  <img width="100%" src="{{ .Site.BaseURL }}images/webjeda-logo-big.jpg" alt="{{ .Site.Title}}">
+                  <img width="100%" src="{{ .Site.BaseURL }}images/{{ .Site.Params.defaultImage }}" alt="{{ .Site.Title }}">
                   {{ end }}
                   
                   <div class="panel-body">
