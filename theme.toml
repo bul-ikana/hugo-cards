@@ -6,13 +6,13 @@ license = "MIT"
 licenselink = "https://github.com/bul-ikana/hugo-cards/blob/master/LICENSE.md"
 description = "A bootstrap based minimal hugo theme based on webjeda-cards"
 homepage = "http://example.com/"
-tags = [bootstrap, cards, responsive, jekyll, blog]
+tags = ["bootstrap", "cards", "responsive", "jekyll", "blog"]
 features = []
 min_version = "0.45.0"
 
 [author]
   name = "Hugo Aguirre"
-  homepage = "bool.netlify.com"
+  homepage = "https://bool.netlify.com"
 
 # If porting an existing theme
 [original]
