@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>{{ .Title}}{{if .IsPage}} - {{.Site.Title}}{{ end }}</title>
+{{partial "seo.html" .}}
 
 {{ $main := resources.Get "sass/main.scss" | resources.ToCSS (dict "outputStyle" "compressed")}}
 <link rel="stylesheet" href="{{ $main.RelPermalink }}">
