@@ -8,7 +8,7 @@ description = "A bootstrap based minimal hugo theme based on webjeda-cards"
 homepage = "https://hugo-cards-site.netlify.com/"
 tags = ["bootstrap", "cards", "responsive", "jekyll", "blog"]
 features = []
-min_version = "0.45.0"
+min_version = "0.57.0"
 
 [author]
   name = "Hugo Aguirre"
