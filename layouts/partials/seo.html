@@ -1,0 +1,54 @@
+<meta name="description" content="{{ if .Description }}{{ .Description | plainify }}{{ else }}{{if .IsPage}}{{ .Summary | plainify  }}{{ end }}{{ end }}"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="{{ .Permalink }}" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="{{ if .Description }}{{ .Description | plainify }}{{ else }}{{if .IsPage}}{{ .Summary | plainify  }}{{ end }}{{ end }}" />
+<meta name="twitter:title" content="{{ .Title }}{{ if .IsHome }} - {{ .Site.Params.Tagline }}{{ else }} - {{ .Site.Title }}{{ end }}" />
+<meta name="twitter:site" content="{{ .Site.Params.twitter }}" />
+<meta name="twitter:creator" content="{{ .Site.Params.twitter }}" />
+
+<!-- OG data -->
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta content="{{ .Title }}{{ if .IsHome }} - {{ .Site.Params.Tagline }}{{ else }} - {{ .Site.Title }}{{ end }}" property="og:title">
+<meta content="{{ if .Description }}{{ .Description | plainify }}{{ else }}{{if .IsPage}}{{ .Summary | plainify  }}{{ end }}{{ end }}" property="og:description">
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+{{ range .Params.categories }}<meta property="article:section" content="{{ . }}" />{{ end }}
+{{ if isset .Params "date" }}<meta property="article:published_time" content="{{ time .Date }}" />{{ end }}
+
+<!-- JSON-LD -->
+{{ if .IsHome }}
+<script type="application/ld+json">
+{ 
+  "@context": "http://schema.org", 
+  "@type": "WebSite", 
+  "url": "{{ .Permalink }}", 
+  "name": "{{ .Site.Title }}",
+   "author": {
+      "@type": "Person",
+      "name": "{{ .Site.Params.author }}"
+    },
+  "description": "{{ .Site.Params.description }}",
+}
+</script>
+{{ end }}
+
+{{ if .IsPage }}
+<script type="application/ld+json">
+{ 
+    "@context": "http://schema.org", 
+    "@type": "BlogPosting",
+    "headline": "{{ .Title }}",
+    "genre": "{{ range .Params.categories }}{{ . }}{{ end }}",  
+    "url": "{{ .Permalink }}",
+    "datePublished": "{{ time .Date }}",
+    "description": "{{ if .Description }}{{ .Description | plainify }}{{ else }}{{if .IsPage}}{{ .Summary | plainify  }}{{ end }}{{ end }}",
+    "author": {
+        "@type": "Person",
+        "name": "{{ .Site.Author.name }}"
+    }
+ }
+</script>
+{{ end }}
