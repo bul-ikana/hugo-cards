@@ -2,6 +2,7 @@
 layout: post
 title: Documentation
 img: image-5.png
+tags: ["tag_a", "tag_b"]
 date: 2016-03-09
 ---
 
