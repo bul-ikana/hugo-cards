@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Post with no image"
-categories: jekyll update
+category: two
 date: 2016-06-09
 ---
 When there is no image mentioned in the front-matter, default image will be displayed. You can change this image to any other one that suits your needs.
