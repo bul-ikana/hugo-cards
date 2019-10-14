@@ -5,7 +5,7 @@
   
     <div class="row pack">
 
-        {{ $paginator := .Paginate (where .Pages "Section" "posts") }}
+        {{ $paginator := .Paginate (where .Site.RegularPages "Section" "posts") }}
         {{ range $paginator.Pages }}   
             <div class="col-md-4 card">
              <a href="{{ .Permalink }}" class="index-anchor">    

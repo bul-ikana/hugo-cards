@@ -14,7 +14,7 @@
                 {{ range first 3 (where .Site.RegularPages "Section" "posts") }}
 
                       <li>
-                      <p><a href="{{ .URL }}">{{ .Title }}</a><small>&nbsp;&nbsp;{{ .Date.Format "January 2, 2006" }}</small></p>
+                      <p><a href="{{ .Permalink }}">{{ .Title }}</a><small>&nbsp;&nbsp;{{ .Date.Format "January 2, 2006" }}</small></p>
                       </li>
 
                 {{ end }}

@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Elements"
-categories: jekyll update
 img: image-4.png
 date: "2016-04-10"
 ---
