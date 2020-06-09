@@ -52,3 +52,8 @@ The Google Analytics tracking ID
 
 #### disqus
 The disqus_thread ID
+
+### Customization
+
+#### custom_css
+Relative links with custom.css files. This will let yout overwrite the theme's CSS.
