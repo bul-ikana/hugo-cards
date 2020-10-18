@@ -55,5 +55,5 @@ The disqus_thread ID
 
 ### Customization
 
-#### custom_css
-Relative links with custom.css files. This will let yout overwrite the theme's CSS.
+#### CSS
+There is a `custom.css` file included where you can write and override any style you need. If you need additional files, you can add their relative links to the `custom_css` param in the theme config.
