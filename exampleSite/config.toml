@@ -23,6 +23,8 @@ paginate = 6
   analytics = ""
   disqus = ""
 
+  #custom_css = ["css/custom.css"]
+
   [params.copyright]
      name = "bool"
      link = "https://bool.netlify.com"
