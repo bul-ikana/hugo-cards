@@ -1,5 +1,5 @@
 ---
-title:  "Welcome to Hugo!"
+title:  "Welcome to Hugox!"
 date:   2016-06-13 10:51:47 +0530
 img: "image-1.png"
 categories: [one, two]

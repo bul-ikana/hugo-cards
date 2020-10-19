@@ -1,7 +1,7 @@
 ---
 title:  "Usage Guide"
 img: image-2.png
-categories: [two]
+categories: ["one", "two"]
 date: "2016-06-12"
 ---
 
