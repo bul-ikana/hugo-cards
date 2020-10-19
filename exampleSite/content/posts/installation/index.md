@@ -2,7 +2,7 @@
 layout: post
 title:  "Installation"
 img: image-3.png
-categories: [one]
+categories: ["one", "two"]
 tags: ["tag_c"]
 date: 2016-05-09
 ---

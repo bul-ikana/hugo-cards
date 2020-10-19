@@ -10,6 +10,17 @@ Responsive theme built on bootstrap. Great for showcasing content with featured 
 
 Easily add disqus, google analytics, social links and a facebook like box.
 
+## Customization
+
+### Images
+To change the featured image of your post, you must provide a `img` param in your post front-matter. This theme now supports [page resources](https://gohugo.io/content-management/page-resources/) so your featured image should be in the same directory than your `index.md` post file.
+
+If you don't include one, a default image will be used. You can also customize this default image by changing the `defaultImage` param in your theme config. Be aware that this default image should be located on your `static/images` directory
+
+### CSS
+There is a `custom.css` file included where you can write and override any style you need. If you need additional files, you can add their relative links to the `custom_css` param in the theme config.
+
+
 ## Configuration
 
 Please see the sample [`config.toml`](https://github.com/bul-ikana/hugo-cards/blob/master/exampleSite/config.toml).
@@ -52,8 +63,3 @@ The Google Analytics tracking ID
 
 #### disqus
 The disqus_thread ID
-
-### Customization
-
-#### custom_css
-Relative links with custom.css files. This will let yout overwrite the theme's CSS.

@@ -23,7 +23,7 @@ paginate = 6
   analytics = ""
   disqus = ""
 
-  #custom_css = ["css/custom.css"]
+  custom_css = ["css/custom.css"]
 
   [params.copyright]
      name = "bool"
