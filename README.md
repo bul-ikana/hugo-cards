@@ -59,7 +59,7 @@ The title of the like box. This text will be shown while the box is loading.
 ### Tracking and comments
 
 #### analytics
-The Google Analytics tracking ID
+The Google Analytics tracking ID supporting both Universal Analytics and GA4
 
 #### disqus
 The disqus_thread ID

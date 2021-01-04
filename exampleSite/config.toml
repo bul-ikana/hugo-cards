@@ -25,6 +25,10 @@ paginate = 6
 
   custom_css = ["css/custom.css"]
 
+  [params.analytics]
+    type=""
+    trackingID = ""
+
   [params.copyright]
      name = "bool"
      link = "https://bool.netlify.com"
