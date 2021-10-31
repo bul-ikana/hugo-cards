@@ -20,13 +20,12 @@ paginate = 6
   fbPageUrl = ""
   fbPageTitle = ""
 
-  analytics = ""
   disqus = ""
-
+  
   custom_css = ["css/custom.css"]
 
   [params.analytics]
-    type=""
+    type="UA"
     trackingID = ""
 
   [params.copyright]
