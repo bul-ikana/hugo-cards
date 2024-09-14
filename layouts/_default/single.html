@@ -5,7 +5,7 @@
 
           <header class="post-header post-header-base">
             <h1 class="post-title" itemprop="name headline">{{ .Title }}</h1>
-            {{ if ne .Site.Params.post.meta "hidden" }}
+            {{ if not .Site.Params.post.meta.isHidden }}
             <p class="post-meta"><time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}' itemprop="datePublished">{{ .Date.Format "January 2, 2006" }}</time>{{ with .Params.Author }} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ . }}</span></span>{{ end }}</p>
             {{ end }}
                  
