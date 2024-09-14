@@ -27,9 +27,9 @@ paginate = 6
   #[params.post.meta]
   #  isHidden = true
 
-  [params.post.sidebar]
-    type = "profile"
-    title = "Profile"
+  #[params.post.sidebar]
+  #  type = "profile"
+  #  title = "Profile"
 
   [params.analytics]
     type="UA"
