@@ -1,0 +1,42 @@
+// mobile view
+@media (max-width: 768px) {
+    .main-body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    // sidebar show before post
+    .sidebar-profile {
+        order: 1;
+    }
+    .post-wrapper {
+        order: 2;
+    }
+
+    // use sidebar header instead of post header
+    // Using .post-header-base instead of .post-header
+    // is to avoid affecting the post-header inside the pages directory.
+    .post-header-base {
+        display: none;
+    }
+    .sidebar-profile-header {
+        display: block;
+    }
+
+    // sidebar header style
+    .sidebar-profile-header h1 {
+        margin: 0;
+        margin-top: -30px;
+    }
+}
+
+// desktop view
+@media (min-width: 768px) {
+    // use post header instead of sidebar header
+    .post-header-base {
+        display: block;
+    }
+    .sidebar-profile-header {
+        display: none;
+    }
+}

@@ -4,6 +4,12 @@ title: Documentation
 img: image-5.png
 tags: ["tag_a", "tag_b"]
 date: 2016-03-09
+profile:
+  attrs:
+    - key: Name
+      val: Stuart
+    - key: Likes
+      val: Playing guitar
 ---
 
 

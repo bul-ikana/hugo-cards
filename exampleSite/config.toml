@@ -24,6 +24,13 @@ paginate = 6
   
   custom_css = ["css/custom.css"]
 
+  #[params.post]
+  #  meta = "hidden"
+
+  [params.post.sidebar]
+    type = "profile"
+    title = "Profile"
+
   [params.analytics]
     type="UA"
     trackingID = ""

@@ -1,0 +1,42 @@
+# Hugo build output (default)
+public/
+
+# Hugo temporary files
+.hugo_build.lock
+resources/_gen/
+
+# Log files
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node modules (if using npm/yarn in the project)
+node_modules/
+
+# Optional Netlify / Vercel / Other deployment services' settings
+netlify.toml
+vercel.json
+
+# Temporary and system-specific files
+*.swp
+*.swo
+.sass-cache/
+.idea/
+.vscode/
+*.bak
+*.tmp
+
+# Binary files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Git-specific ignore files
+*.orig
+
+# Mac specific files
+.DS_Store
+
