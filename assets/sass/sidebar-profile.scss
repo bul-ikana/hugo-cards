@@ -1,4 +1,4 @@
-// mobile view
+// mobile layout
 @media (max-width: 768px) {
     .main-body {
       display: flex;
@@ -30,7 +30,7 @@
     }
 }
 
-// desktop view
+// desktop layout
 @media (min-width: 768px) {
     // use post header instead of sidebar header
     .post-header-base {
