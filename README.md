@@ -21,6 +21,20 @@ This only works on card posts and will not affect normal pages (e.g., About, Con
   title = "Profile"
 ```
 
+```
+title:  "Welcome to Hugox!"
+date:   2016-06-13 10:51:47 +0530
+img: "image-1.png"
+categories: [one, two]
+author: "Hugo Aguirre"
+profile:
+  attrs:
+    - key: Name
+      val: Stuart
+    - key: Likes
+      val: Playing guitar
+```
+
 ### Desktop Layout
 
 ![profile-sidebar-desktop](/images/profile-sidebar-desktop.jpg)
