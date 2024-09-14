@@ -119,6 +119,26 @@ footer {
     border: 1px solid $grey-color-light;
 }
 
+.sidebar-profile-content h2 {
+    margin-top: 0;
+}
+
+.sidebar-profile-content {
+    padding: 10px;
+    border: 1px solid $grey-color-light;
+}
+
+.sidebar-profile-content ul {
+    padding: 0;
+    margin-left: 15px;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+.sidebar-profile-content ul li {
+    height: 30px;
+}
+
 .post-img img {
     width: 100%;
 }
@@ -142,6 +162,10 @@ footer {
 .post-title {
     line-height: 2;
     text-decoration: underline;
+}
+
+.post-header h1 {
+    margin-top: -10px;
 }
 
 .index-anchor {

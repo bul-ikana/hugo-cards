@@ -1,4 +1,14 @@
-<div class="col-md-4 mt20">
+<div class="col-md-4 mt20 sidebar-profile">
+
+        <header class="sidebar-profile-header">
+          <h1 class="post-title" itemprop="name headline">{{ .Title }}</h1>
+            {{ if ne .Site.Params.post.meta "hidden" }}
+            <p class="post-meta"><time datetime='{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}' itemprop="datePublished">{{
+                .Date.Format "January 2, 2006" }}</time>{{ with .Params.Author }} • <span itemprop="author" itemscope
+                itemtype="http://schema.org/Person"><span itemprop="name">{{ . }}</span></span>{{ end }}</p>
+            {{ end }}
+        </header>
+
         <div class="post-img">
             {{ if .Params.img }}
             {{ with .Resources.Match .Params.img }}
@@ -12,19 +22,17 @@
         </div>
             
         
-        <div class="mt10 recent">
+        <div class="mt10 sidebar-profile-content">
             {{ if .Site.Params.post.sidebar.title }}
             <h2>{{ .Site.Params.post.sidebar.title }}</h2>        
             {{ else }}
-            <h2>Recent articles</h2>
+            <h2>Profile</h2>
             {{ end }}
              <ul>
-                {{ range first 3 (where .Site.RegularPages "Section" "posts") }}
-
-                      <li>
-                      <p><a href="{{ .Permalink }}">{{ .Title }}</a><small>&nbsp;&nbsp;{{ .Date.Format "January 2, 2006" }}</small></p>
-                      </li>
-
+                {{ range .Params.profile.attrs }}
+                    <li>
+                        <p><strong>{{ .key }}:</strong> {{ .val }}</p>
+                    </li>
                 {{ end }}
               </ul>
         </div>

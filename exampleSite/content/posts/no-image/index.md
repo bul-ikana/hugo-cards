@@ -3,6 +3,12 @@ layout: post
 title:  "Post with no image"
 categories: ["one", "two"]
 date: 2016-06-09
+profile:
+  attrs:
+    - key: Name
+      val: Stuart
+    - key: Likes
+      val: Playing guitar
 ---
 When there is no image mentioned in the front-matter, default image will be displayed. You can change this image to any other one that suits your needs.
 
