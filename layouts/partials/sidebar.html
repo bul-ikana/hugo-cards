@@ -13,11 +13,7 @@
             
         
         <div class="mt10 recent">
-            {{ if .Site.Params.post.sidebar.title }}
-            <h2>{{ .Site.Params.post.sidebar.title }}</h2>        
-            {{ else }}
             <h2>Recent articles</h2>
-            {{ end }}
              <ul>
                 {{ range first 3 (where .Site.RegularPages "Section" "posts") }}
 
