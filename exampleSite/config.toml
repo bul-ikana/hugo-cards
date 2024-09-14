@@ -24,8 +24,8 @@ paginate = 6
   
   custom_css = ["css/custom.css"]
 
-  #[params.post]
-  #  meta = "hidden"
+  #[params.post.meta]
+  #  isHidden = true
 
   [params.post.sidebar]
     type = "profile"
