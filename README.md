@@ -2,13 +2,37 @@
 
 A Hugo theme, ported from [Webjeda-cards](http://webjeda.com/cards)
 
-![Screenshot](https://github.com/bul-ikana/hugo-cards/blob/master/images/screenshot.png)
+![Screenshot](/images/screenshot.png)
 
 ## Features
 
 Responsive theme built on bootstrap. Great for showcasing content with featured images.
 
 Easily add disqus, google analytics, social links and a facebook like box.
+
+## Profile Sidebar
+
+You can change the default sidebar (Recent articles) to the profile sidebar.
+This only works on card posts and will not affect normal pages (e.g., About, Contact).
+
+```
+[params.post.sidebar]
+  type = "profile"
+  title = "Profile"
+```
+
+![profile-sidebar-desktop](/images/profile-sidebar-desktop.jpg)
+
+On mobile devices, the profile sidebar will be displayed at the top.
+
+![profile-sidebar-mobile](/images/profile-sidebar-mobile.jpg)
+
+You can also hide the post metadata.
+
+```
+[params.post.meta]
+  isHidden = true
+```
 
 ## Customization
 
