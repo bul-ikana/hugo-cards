@@ -21,13 +21,17 @@ This only works on card posts and will not affect normal pages (e.g., About, Con
   title = "Profile"
 ```
 
+### Desktop Layout
+
 ![profile-sidebar-desktop](/images/profile-sidebar-desktop.jpg)
+
+### Mobile Layout
 
 On mobile devices, the profile sidebar will be displayed at the top.
 
 ![profile-sidebar-mobile](/images/profile-sidebar-mobile.jpg)
 
-You can also hide the post metadata.
+### Hide Post Metadata
 
 ```
 [params.post.meta]
