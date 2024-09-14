@@ -3,7 +3,9 @@ languageCode = "en-us"
 title = "Hugo Cards"
 theme = "hugo-cards"
 themesDir = "../.."
-paginate = 6
+
+[pagination]
+  pagerSize = 6
 
 [params]
   builtBy = "bool"
